@@ -1,0 +1,858 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500&family=Ruwudu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+    font-family: 'Inter', sans-serif;
+
+}
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem; 
+    height: auto;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Adicione sua cor de fundo desejada */
+    z-index: 100;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* CSS para tornar o ícone do menu hamburguer visível quando o usuário rolar a página */
+.header-fixed .menu-icon {
+    display: block;
+    /* Adicione estilos adicionais ao ícone, como tamanho, cor, etc., conforme necessário */
+}
+
+
+h3{
+    font-size: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+img, video{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    max-width: 100%;
+    height: 40px;
+}
+
+.btn-action{
+   border-radius: 10px;
+   border: 0 solid;
+   cursor: pointer;
+   text-transform: none;
+   padding-left: 0.875rem;
+   padding-right: 0.875rem;
+   background-color: transparent;
+   background-image: none;
+   font-family: inherit;
+   font-feature-settings: inherit;
+   font-variation-settings: inherit;
+   font-size: 100%;
+   font-weight: inherit;
+   line-height: inherit;
+   color: inherit;
+   margin: 0;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
+.font-black{
+    font-weight: 500;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.box-btn-actions{
+    --tw-text-opacity: 1;
+    color: rgb(94 94 94/var(--tw-text-opacity));
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: 0.125rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(235 235 235/var(--tw-bg-opacity));
+    border-radius: 0.75rem;
+    display: flex;
+}
+
+.first-section {
+    background-image: url(imagens/landing-page-image-1.png); /* Substitua pelo caminho da sua imagem */
+    position: relative;
+    background-size: cover;
+    background-position: left 15% center;
+    color: white;
+    text-align: center;
+    height: 816px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 32px;
+    display: flex; /* Usar flexbox para centralizar verticalmente */
+    flex-direction: column; /* Alinhar o conteúdo verticalmente */
+    justify-content: center; /* Centralizar verticalmente */
+}
+
+.texto-principal1 {
+    text-align: center;
+}
+
+.texto-principal1 h2 {
+    font-size: 75px; /* Tamanho da fonte para o título (ajuste conforme necessário) */
+}
+
+.texto-principal1 p {
+    font-size: 18px; /* Tamanho da fonte para o parágrafo (ajuste conforme necessário) */
+}
+
+.botao-aplicar {
+    background-color: rgb(39, 39, 255); /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px 70px; /* Espaçamento interno para o conteúdo */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+/* Efeito de hover para o botão "Aplicar" */
+.botao-aplicar:hover {
+    background-color: darkblue; /* Cor de fundo mais escura quando hover */
+}
+
+.relogio{
+    padding-top: 10px;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    gap: 0.25rem;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+    margin-right: 2px; /* Adiciona um pequeno espaço à direita do ícone */
+}
+
+.section-dois{
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: hidden;
+}
+
+.section-dois p{
+    font-size: 4em;
+    font-weight: bold;
+    padding-top: 20%;
+    padding-bottom: 20%;
+
+}
+
+.third-section{
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 2em;
+    margin-bottom: 15rem;
+}
+
+.third-section h2{
+    padding-bottom: 10px;
+}
+
+.grid1{
+    display: grid;
+}
+
+ul{
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    column-gap: 4rem;
+    row-gap: 4rem;
+}
+
+
+
+.parte-do-video p{
+    opacity: .4;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.parte-da-img p{
+    opacity: .4;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.vid{
+    padding-bottom: 4px;
+}
+
+.parte-do-video2 p{
+    opacity: .4;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.parte-da-img2 p {
+    opacity: .4;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.fourth-section{
+    max-width: 100%;
+
+}
+
+.fourth-section h2{
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 60px;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+.imagens-4{
+    padding-left: 600px;
+    padding-right: 600px;
+}
+
+.carousel{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.imagens-slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.imagens-slides input {
+    display: none;
+}
+
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+
+.manual-btn{
+    border: 2px solid rgb(224, 224, 224);
+    padding: 5px;
+    border-radius: 0.25rem;
+    width: 60px;
+    height: 0.3px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 0.25rem;
+    width: 60px;
+    height: 0.3px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #20a6ff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #20a6ff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #20a6ff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #20a6ff;
+}
+
+.msg-img1{
+    position: relative;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+
+
+.fifith-section{
+    height: 816px;
+    border-radius: 32px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 100px;
+    position: relative;
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 31 31/var(--tw-bg-opacity));
+}
+
+.texto-sec5{
+    z-index: 10;
+    opacity: 1;
+    transform: none;
+    width: 50%;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.texto-sec5 h1{
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+}
+
+.texto-sec5 p{
+    margin-bottom: 2.0rem;
+    font-size: 1.2em;
+}
+
+.texto-sec5 button{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border: solid 0;
+    background-color:  rgb(87, 87, 248);
+    color: white;
+    font-size: 1.4em;
+    border-radius: 1rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    text-transform: none;
+
+}
+
+.img-retangulo{
+    transform: translateX(15%) translateY(-22.3687px) rotate(-41deg) translateZ(0px);
+    --tw-bg-opacity: 1;
+    background-color: rgb(48 48 54/var(--tw-bg-opacity));
+    --tw-rotate: -41deg;
+    --tw-translate-y: 25%;
+    --tw-translate-x: 15%;
+    width: 467px;
+    height: 245px;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+footer{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    border-radius: 32px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+}
+.grid{
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 0.5rem;
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+.opacity{
+    opacity: .4;
+}
+
+.email{
+    --tw-text-opacity: 1;
+    color: rgb(44 113 240/var(--tw-text-opacity));
+}
+
+.on-grid{
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-column: span 2/span 2;
+    opacity: .4;
+    display: grid;
+}
+
+.Otmow{
+    margin-top: auto;
+    margin-bottom: auto;
+    opacity: .7;
+}
+
+.logo-otmow{
+    width: 70%;
+    margin-top: 20%;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.msg-img1{
+    overflow-y: auto;
+    width: 40%; 
+    height: 65%; 
+    top: 25%;
+    right: 30px;
+    position: absolute;
+    font-weight: 500px;
+    font-size: .700rem;
+    line-height: 1.25rem;
+    padding: 1.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.msg-img1 p{
+    opacity: .5;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.init-hidden{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.init-hidden-off{
+    opacity: 1;
+}
+
+/* Adicione este CSS no seu arquivo style.css */
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white; /* Cor de fundo do header quando fixo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra quando o header está fixo */
+}
+
+#apply-button {
+    display: none;
+}
+
+.btn-action.blue-bg {
+    padding: 1rem 3rem;
+    width: auto;
+    text-transform: none;
+    cursor: pointer;
+    display: flex;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-weight: 600;
+    --tw-bg-opacity: 1;
+    background-color: rgb(44 113 240/var(--tw-bg-opacity));
+}
+
+.btn-action.blue-bg:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura quando hover no botão "Aplicar Agora" */
+}
+
+.material-icons{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.aplicar-agora{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: auto;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-weight: 600;
+    --tw-bg-opacity: 1;
+    background-color: rgb(44 113 240/var(--tw-bg-opacity));
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 0 solid;
+}
+
+.aplicar-agora:hover{
+    background-color: #0056b3;
+}
+
+.botoes-aplicar{
+    gap: 0.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.hamburg{
+    opacity: 1;
+    align-self: stretch;
+}
+
+.hamburg1{
+    height: 100%;
+    position: relative;
+}
+
+.buton-hamburg{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    width: auto;
+    --tw-text-opacity: 1;
+    color: rgb(94 94 94/var(--tw-text-opacity));
+    font-weight: 600;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(235 235 235/var(--tw-bg-opacity));
+    border-radius: 1rem;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    background-color: transparent;
+    background-image: none;
+    cursor: pointer;
+    text-transform: none;
+    border: 0 solid;
+    background-color: rgb(211, 208, 208);
+}
+
+.hide-button {
+    display: none;
+}
+
+/* Classe para ocultar os botões de idioma */
+.hide-language {
+    display: none;
+}
+
+/* Classe para mostrar os botões "Aplicar Agora" */
+.show-button {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilize o menu móvel */
+#mobile-menu {
+    background-color: #fcfbfb; /* Cor de fundo cinza */
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 1000;
+    width: 300px; /* Largura desejada */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para dar destaque */
+}
+
+/* Estilize os links do menu */
+#mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#mobile-menu ul li {
+    margin-bottom: 10px; /* Espaço entre os itens do menu */
+    padding: 4px;
+}
+
+#mobile-menu ul li a {
+    color: black; /* Cor das letras brancas */
+    text-decoration: none;
+    font-size: 18px; /* Tamanho da fonte desejado */
+}
+
+/* Estilize o botão hambúrguer */
+#menu-toggle {
+ 
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.p-hamb{
+    padding-top: 10px;
+    color: black;
+    opacity: 0.3;
+}
+
+#mobile-menu ul li:hover{
+    background-color: rgb(218, 215, 215);
+}
+
+.ret-azul{
+    transform: translateX(55%) translateY(-70.3358px) rotate(-41deg) translateZ(0px);
+    right: -85%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(44 113 240/var(--tw-bg-opacity));
+    --tw-rotate: -41deg;
+    width: 467px;
+    height: 245px;
+    z-index: 0;
+    bottom: 0;
+    position: relative;
+}
+
+.grid-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 790px){
+
+    
+
+    .aplicar-agora{
+        display: none;
+    }
+
+   .first-section .texto-principal1 h2{
+        font-size: 1.4rem;
+   }
+
+   .first-section .texto-principal1 p{
+        font-size: 0.9rem;
+   }
+   
+   .section-dois .second-section p{
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 20%;
+    padding-bottom: 20%;
+   }
+
+   .third-section{
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 2em;
+    margin-bottom: 15rem;
+   }
+
+   .third-section h2{
+     font-size: 1.8rem;
+   }
+
+   .third-section h3 {
+    font-size: 1rem;
+   }
+
+   .third-section p {
+    font-size: 0.8rem;
+   }
+   
+   .third-section .grid1 {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+   }
+
+   .fourth-section h2 {
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+   }
+
+
+
+   .fourth-section .carousel{
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+   }
+
+   .fourth-section .carousel .imagens-slides {
+    width: 400%;
+    height: 200px;
+    display: flex;
+   }
+
+   .fourth-section .carousel .imagens-slides .navigation-auto{
+    position: absolute;
+    width: 300px;
+    margin-top: 420px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    left: 20%;
+   }
+
+   .fourth-section .manual-navigation{
+    position: absolute;
+    width: 300px;
+    margin-top: 320px;
+    display: flex;
+    justify-content: center;
+    left: 20%;
+   }
+
+   .fourth-section .msg-img1{
+    font-size: 0.7rem;
+    overflow-y: auto;
+    width: 90%;
+    height: 110%;
+    top: 130%;
+    right: 30px;
+    position: absolute;
+    font-weight: 500px;
+    line-height: 1.25rem;
+    padding: 1.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    border-radius: 1rem;
+    overflow: hidden;
+   }
+
+   .fifith-section .texto-sec5{
+    padding: 0.4rem;
+   }
+
+   .fifith-section .texto-sec5 h1{
+    font-size: 1.6rem;
+   }
+
+   .fifith-section .texto-sec5 p{
+    font-size: 0.9rem;
+   }
+
+   footer{
+    padding-left: 2%;
+    padding-right: 2%;
+   }
+
+   footer .grid{
+        display: none;
+   }
+
+   footer .grid-mobile{
+    display: block;
+   }
+
+   footer .grid-mob{
+    gap: 0.5rem;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    display: grid;
+    margin-bottom: 1rem;
+   }
+
+   footer .logo-otmow{
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+   }
+}
